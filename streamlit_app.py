@@ -38,7 +38,7 @@ try:
 except URLError as e:
   streamlit.error()
 
-add_fruit = streamlit.text_input('What fruit would you like information about?')
+#add_fruit = streamlit.text_input('What fruit would you like information about?')
 
 
 streamlit.stop()
