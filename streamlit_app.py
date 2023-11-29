@@ -41,15 +41,6 @@ except URLError as e:
 add_fruit = streamlit.text_input('What fruit would you like information about?')
 streamlit.write('the user entered')
 
-
-#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-
-
-# normalise the data 
-#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
-
-
 streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
